@@ -33,22 +33,21 @@
             font-size:35px;
 
         }
+	    button:active{
+		    border:1px red solid;
+	    }
         #count{
             margin-top: 7px;
             font-size:25px;
         }
-body{
-    display:flex;
-    justify-content:center;
-}
         
     </style>
 </head>
 
 <body>
-    <h1> Jay Shree Krishna </h1>
-    <Button onclick="inc()">+</Button>
-    <div id="count"></div>
+    <h1> Jay Shree Krishna </h1><br>
+    <Button onclick="inc()">+</Button><br><br><br>
+    <h3 id="count"></h3>
     <script>
         let c=0;
        function inc(){
