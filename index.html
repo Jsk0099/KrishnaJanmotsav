@@ -7,6 +7,8 @@
     <title>Krishna Janmotsav</title>
     <link rel = "icon" href ="KrishnaJanmotsav/three.JPG" type = "image/jpg">
     <style>
+	    body{
+		    height:97vh;}
         table {
             width: 100vw;
             height: 100vh;
@@ -22,6 +24,7 @@
         td:nth-child(even):hover,
         h1:hover,
         h3:hover,
+	    body:hover
 	    button:hover{
             color: rgb(196, 116, 13);
             box-shadow: 5px 1px 5px 3px rgb(250, 5, 5);
@@ -31,13 +34,6 @@
         td:nth-child(odd):hover {
             box-shadow: 5px 1px 5px 3px rgb(231, 12, 12);
         }
-        button{
-            font-size:35px;
-
-        }
-	    button:active{
-		    border:1px red solid;
-	    }
         #count{
             margin-top: 7px;
             font-size:25px;
@@ -46,9 +42,8 @@
     </style>
 </head>
 
-<body>
+<body onclick='inc()'>
     <h1> Jay Shree Krishna </h1><br>
-    <Button onclick="inc()">+</Button><br><br><br>
     <h3 id="count"></h3>
     <script>
         let c=0;
@@ -89,7 +84,7 @@
         </tr>
     </table> 
 -->
-    <div>
+    <div style="bottom:3px">
         <h3>Copyright &copy; 2023 JSK</h3>
     </div>
 </body>
