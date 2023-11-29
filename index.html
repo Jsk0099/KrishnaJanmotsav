@@ -104,9 +104,13 @@
           --c;
         }
       }
+      function getUseragent(){
+        document.getElementById('uagent').innerHTML = navigator.userAgent;
+      }
     </script>
-    <div>
+    <div click="getUseragent()">
       <h3>Copyright &copy; 2023 JSK</h3>
     </div>
+    <div id="uagent"></div>
   </body>
 </html>
