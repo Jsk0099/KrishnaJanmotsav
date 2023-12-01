@@ -81,7 +81,7 @@
       let c = 0;
       try{
         document.createEvent('touchEvent');
-        document.getElementsByTagName('body')[0].addEventListener('touchEnd',inc);
+        document.getElementsByTagName('body')[0].addEventListener('touchend',inc);
       }catch(e){
         document.getElementsByTagName('body')[0].addEventListener('click',inc);
       }
